@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <img src="assets/img/Logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list [inset]="true" lines="full">
+    <ion-list-header>
+      Viajes Creados
+    </ion-list-header>
+    <ion-item *ngFor = "let viajesCreados of viajeService.viajes " >
+      <ion-grid>
+        <hr>
+        <ion-row>
+        <ion-col>
+          <ion-label>Inicio</ion-label><br> 
+          <ion-label>Final</ion-label><br>
+          <ion-label>N° Pasajeros</ion-label><br>
+          <ion-label>Hora de salida</ion-label><br>
+          <ion-label>Valor</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-label>{{viajesCreados.Comienzo}}</ion-label><br> 
+          <ion-label>{{viajesCreados.Final}}</ion-label><br>
+          <ion-label>{{viajesCreados.Npasajeros}}</ion-label><br>
+          <ion-label>{{viajesCreados.Salida}}</ion-label><br>
+          <ion-label>{{viajesCreados.Valor}}</ion-label>
+        </ion-col>
+        </ion-row>
+        <hr>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

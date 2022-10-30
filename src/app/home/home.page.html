@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <img src="assets/img/Logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-title class="ion-padding-top ion-text-center">
+    <ion-label>
+      ¡Crea tu viaje!, {{validacion.nombre}}
+    </ion-label>
+  </ion-title>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Crea tu propio viaje</ion-card-subtitle>
+    </ion-card-header>
+    <!-- Crear un Viaje -->
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Punto de Salida</ion-label>
+        <ion-input type="text" [(ngModel)]="viaje.salida"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Punto de Termino</ion-label>
+        <ion-input type="text" [(ngModel)]="viaje.termino"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">N° Pasajeros</ion-label>
+        <ion-input type="number" [(ngModel)]="viaje.pasajeros"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Hora de Salida</ion-label>
+        <ion-input type="time" [(ngModel)]="viaje.horaSalida"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Monto</ion-label>
+        <ion-input type="number" [(ngModel)]="viaje.monto"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <!-- Botones Crear un viaje -->
+      <ion-button color="micolor" shape="block" (click)="crearViaje()">Crear Viaje</ion-button>
+  </ion-card>
+  <!-- Termina un Card -->
+</ion-content>

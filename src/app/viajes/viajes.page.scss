@@ -1,0 +1,24 @@
+ion-toolbar{
+    background-color: var(--ion-color-micolor);
+    color: var(--ion-color-light);
+}
+
+ion-button{
+    background-color: var(--ion-color-micolor);
+    color: var(--ion-color-light);
+  }
+
+///////Lista
+ion-list-header {
+  background-color: var(--ion-color-micolor);
+  --color: #fff;
+
+  --border-width: 0 0 4px 0;
+  --border-color: #f8b31c;
+  --border-style: solid;
+}
+
+img{
+  width: 60%;
+  position: static;
+}

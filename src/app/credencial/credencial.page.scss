@@ -1,0 +1,14 @@
+ion-toolbar{
+    background-color: var(--ion-color-micolor);
+    color: var(--ion-color-light);
+  }
+
+ion-thumbnail {
+  --size: 140px;
+  --border-radius: 14px;
+}
+
+img{
+  width: 60%;
+  position: static;
+}

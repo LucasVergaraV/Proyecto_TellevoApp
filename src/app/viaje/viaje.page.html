@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="micolor">
+    <ion-buttons slot="start">
+      <ion-back-button>Atras</ion-back-button>
+    </ion-buttons>
+    <ion-title>viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Viaje Creado</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>Salida</p>
+      <ion-item>
+        <ion-label>{{ultimoViaje.Comienzo}}</ion-label>
+      </ion-item>
+      <p>Termino</p>
+      <ion-item>
+        <ion-label>{{ultimoViaje.Final}}</ion-label>
+      </ion-item>
+      <p>Numero de pasajeros</p>
+      <ion-item>
+        <ion-label>{{ultimoViaje.Npasajeros}}</ion-label>
+      </ion-item>
+      <p>Hora de salida</p>
+      <ion-item>
+        <ion-label>{{ultimoViaje.Salida}}</ion-label>
+      </ion-item>
+      <p>Monto</p>
+      <ion-item>
+        <ion-label>{{ultimoViaje.Valor}}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
