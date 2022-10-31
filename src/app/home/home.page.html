@@ -21,23 +21,23 @@
     <ion-card-content>
       <ion-item>
         <ion-label position="floating">Punto de Salida</ion-label>
-        <ion-input type="text" [(ngModel)]="viaje.salida"></ion-input>
+        <ion-input type="text" [clearOnEdit]="true" [(ngModel)]="viaje.salida"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Punto de Termino</ion-label>
-        <ion-input type="text" [(ngModel)]="viaje.termino"></ion-input>
+        <ion-input type="text" [clearOnEdit]="true" [(ngModel)]="viaje.termino"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">N° Pasajeros</ion-label>
-        <ion-input type="number" [(ngModel)]="viaje.pasajeros"></ion-input>
+        <ion-input type="number" [clearOnEdit]="true" [(ngModel)]="viaje.pasajeros"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Hora de Salida</ion-label>
-        <ion-input type="time" [(ngModel)]="viaje.horaSalida"></ion-input>
+        <ion-input type="time" [clearOnEdit]="true" [(ngModel)]="viaje.horaSalida"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Monto</ion-label>
-        <ion-input type="number" [(ngModel)]="viaje.monto"></ion-input>
+        <ion-input type="number" [clearOnEdit]="true" [(ngModel)]="viaje.monto"></ion-input>
       </ion-item>
     </ion-card-content>
     <!-- Botones Crear un viaje -->

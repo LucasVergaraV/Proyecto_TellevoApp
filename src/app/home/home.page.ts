@@ -16,9 +16,9 @@ export class HomePage {
   viaje={
     salida:"",
     termino:"",
-    pasajeros:"",
+    pasajeros: 0,
     horaSalida:"",
-    monto:""
+    monto: 0
   }
 
 
@@ -50,9 +50,17 @@ export class HomePage {
 
   crearViaje() {
     if (this.validateModel(this.viaje)){
-      this.presentToast("Viaje Creado",2000)
-      this.viajeService.crearViaje(this.viaje.salida,this.viaje.termino,this.viaje.pasajeros,this.viaje.horaSalida,this.viaje.monto)
-      this.router.navigate(['/viaje']) //redireccona al module de viaje creado
+      if(this.viaje.pasajeros > 0 && this.viaje.pasajeros < 9){
+        if(this.viaje.monto > 0){
+          this.presentToast("Viaje Creado",2000)
+          this.viajeService.crearViaje(this.viaje.salida,this.viaje.termino,this.viaje.pasajeros,this.viaje.horaSalida,this.viaje.monto)
+          this.router.navigate(['/viaje']) //redireccona al module de viaje creado
+        }else{
+          this.presentToast("El monto debe ser mayor que 0",2000)
+        }
+      }else{
+        this.presentToast("El numero de pasajeros debe ser de 1 a 6",2000)
+      }
     }else{
       this.presentToast("Falta ingresar "+this.field,3000)
       

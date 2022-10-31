@@ -8,6 +8,7 @@ ion-button{
     color: var(--ion-color-light);
   }
 
+
 ///////Lista
 ion-list-header {
   background-color: var(--ion-color-micolor);
@@ -16,6 +17,13 @@ ion-list-header {
   --border-width: 0 0 4px 0;
   --border-color: #f8b31c;
   --border-style: solid;
+}
+
+ion-item{
+  border-left: 7px solid #1C6EA4;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 img{

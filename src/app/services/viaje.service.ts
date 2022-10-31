@@ -10,7 +10,7 @@ export class ViajeService {
     this.cargarStorage();
   }
 
-  crearViaje(salida: string, termino: string, pasajeros: string, horaSalida: string, monto: string){
+  crearViaje(salida: string, termino: string, pasajeros: number, horaSalida: string, monto: number){
     let ObjectoViaje = {
       Comienzo : salida,
       Final : termino,
